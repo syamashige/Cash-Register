@@ -12,7 +12,6 @@
     openEvent.addEventListener('click', openRegister);
 
     function openRegister() {
-        // confirm("Are you sure you want to open the register?");
        var employeeId = prompt("Enter Employee ID", "");
        if (employeeId === "12345") {
            confirm("Welcome")
@@ -23,9 +22,6 @@
     }
 
     function displayNum() {
-        console.log('sanity check');
-        // console.log(this.innerHTML);
-       // displayScreen.innerHTML = this.innerHTML;
        displayScreen.innerHTML += this.innerHTML; 
  
     }
@@ -39,6 +35,8 @@
     
     var result;
     var storeNums;
+    var deposits = [];
+    var withdrawing = [];
     var storeAddition;
     var storeSubtraction;
     var storeMultiplication;
@@ -48,17 +46,35 @@
     addDeposit.addEventListener('click', saveDeposit);
 
     function saveDeposit() {
-        storeNums = parseFloat(displayScreen.innerHTML);
+        deposits.push(parseFloat(displayScreen.innerHTML));
+        console.log(deposits);
         displayScreen.innerHTML = null;
-        // console.log(storeNums);
+    }
+
+    var subWithdrawl = document.getElementById('withdraw');
+    subWithdrawl.addEventListener('click', takeOutWithdrawl);
+
+    function takeOutWithdrawl() {
+        withdrawing.push(parseFloat(displayScreen.innerHTML));
+        console.log(withdrawing);
+        displayScreen.innerHTML = null;
     }
 
     var getBalance = document.getElementById('balance');
     getBalance.addEventListener('click', displayBalance);
 
     function displayBalance() {
-        console.log(storeNums);
-        displayScreen.innerHTML = storeNums;
+        var sum = 0;
+        var minus = 0;
+        for (var i = 0; i < deposits.length; i++){
+            sum += deposits[i];
+        }
+        for (var j = 0; j < withdrawing.length; j++) {
+            minus += withdrawing[j];
+        }
+        var totalBalance = (sum - minus);
+        displayScreen.innerHTML = totalBalance;
+        console.log(totalBalance);
     }
 
     var getAdding = document.getElementById('addition');
