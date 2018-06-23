@@ -8,6 +8,20 @@
         targetNumbers[i].addEventListener('click', displayNum)
     }
 
+    var openEvent = document.getElementById('open');
+    openEvent.addEventListener('click', openRegister);
+
+    function openRegister() {
+        // confirm("Are you sure you want to open the register?");
+       var employeeId = prompt("Enter Employee ID", "");
+       if (employeeId === "12345") {
+           confirm("Welcome")
+       } else {
+           confirm("Please enter a valid Employee ID")
+       }
+
+    }
+
     function displayNum() {
         console.log('sanity check');
         // console.log(this.innerHTML);
@@ -92,6 +106,7 @@
                 // console.log("this" + storeNums);
                 // console.log("result" + result)
                 storeAddition = null;
+                receiptElem.appendChild(result);
             } else if (!!storeSubtraction) {
                 storeNums = parseFloat(displayScreen.innerHTML);
                 result = storeSubtraction - storeNums;
@@ -112,5 +127,9 @@
                 storeDivision = null;
             }
     }
+
+    var receiptElem = document.getElementById('receipt');
+
+
 
 })();

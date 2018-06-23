@@ -10,40 +10,46 @@
 </head>
 <body>
     <h1>Calculator Register Thingy</h1>
-    <!-- <img src="/assets/cashregister2.jpg" alt="register"> -->
+    <img src="/assets/register3.png" alt="register">
     <div id ="container">
         <div id="screen"></div>
-        <div id="row1">
-            <button class="numbers">7</button>
-            <button class="numbers">8</button>
-            <button class="numbers">9</button>
-            <button class="application" id="divide">/</button>
-            <button id="clear" class="other">C</button>
+        <div id="numberContainer">
+            <div id="row1">
+                <button class="numbers">7</button>
+                <button class="numbers">8</button>
+                <button class="numbers">9</button>
+                <button class="application" id="divide">/</button>
+                <button id="clear" class="other">C</button>
+                <button class="other" id="open">OPEN</button>
+            </div>
+            <div id="row2">
+                <button class="numbers">4</button>
+                <button class="numbers">5</button>
+                <button class="numbers">6</button>
+                <button class="application" id="multiply">x</button>
+                <button id="balance" class="other">BAL</button>
+            </div>
+            <div id="row3">
+                <button class="numbers">1</button>
+                <button class="numbers">2</button>
+                <button class="numbers">3</button>
+                <button class="application" id="subtraction">-</button>
+                <button id="deposit" class="other">DEP</button>
+            </div>
+            <div id="row4">
+                <button class="numbers">0</button>
+                <button class="numbers">00</button>
+                <button class="numbers">.</button>
+                <button class="application" id="addition">+</button>
+                <button id="withdraw" class="other">W/D</button>
+                <button class="other" id="equals">=</button>
+            </div>
+            <div id="row5">
+                <!-- <button class="application" id="open">OPEN</button>
+                <button class="application" id="equals">=</button> -->
+            </div>
         </div>
-        <div id="row2">
-            <button class="numbers">4</button>
-            <button class="numbers">5</button>
-            <button class="numbers">6</button>
-            <button class="application" id="multiply">x</button>
-            <button id="balance" class="other">BAL</button>
-        </div>
-        <div id="row3">
-            <button class="numbers">1</button>
-            <button class="numbers">2</button>
-            <button class="numbers">3</button>
-            <button class="application" id="subtraction">-</button>
-            <button id="deposit" class="other">DEP</button>
-        </div>
-        <div id="row4">
-            <button class="numbers">0</button>
-            <button class="application" id="addition">+</button>
-            <button class="numbers">.</button>
-            <button class="application" id="equals">=</button>
-            <button id="withdraw" class="other">W/D</button>
-        </div>
-        <div id="row5">
-
-        </div>
+        <div id="receipt"></div>
     </div>
     <script src="/js/calculator.js"></script>
 </body>
