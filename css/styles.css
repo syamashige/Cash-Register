@@ -15,15 +15,15 @@ img {
 }
 
 #container {
-    /* margin: auto;
+    margin: auto;
     border: 1px solid black;
     border-radius: 10px;
     width: 25%;
     height: 300px;
     padding: 10px;
-    align-content: center; */
-    /* background-image: url("/assets/kittens.jpg"); */
-    font-size: 18px;
+    align-content: center;
+    background-image: url("/assets/kittens.jpg");
+    font-size: 16px;
     font-family: 'Poppins', sans-serif; 
     /* background-image: url("/assets/cashregister2"); */
 }

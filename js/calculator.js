@@ -34,7 +34,7 @@
     addDeposit.addEventListener('click', saveDeposit);
 
     function saveDeposit() {
-        storeNums = pareseFloat(displayScreen.innerHTML);
+        storeNums = parseFloat(displayScreen.innerHTML);
         displayScreen.innerHTML = null;
         // console.log(storeNums);
     }
@@ -91,7 +91,7 @@
                 // console.log("add" + storeAddition);
                 // console.log("this" + storeNums);
                 // console.log("result" + result)
-                // storeAddition = null;
+                storeAddition = null;
             } else if (!!storeSubtraction) {
                 storeNums = parseFloat(displayScreen.innerHTML);
                 result = storeSubtraction - storeNums;
@@ -99,16 +99,17 @@
                 // console.log("sub" + storeSubtraction);
                 // console.log("minus" + storeNums);
                 // console.log("result" + result);
-                // storeSubtraction = null;
+                storeSubtraction = null;
             } else if (!!storeMultiplication){
                 storeNums = parseFloat(displayScreen.innerHTML);
                 result = storeMultiplication * storeNums;
                 displayScreen.innerHTML = result;
-
+                storeMultiplication = null;
             } else if (!!storeDivision) {
                 storeNums = parseFloat(displayScreen.innerHTML);
                 result = storeDivision / storeNums;
                 displayScreen.innerHTML = result;
+                storeDivision = null;
             }
     }
 
