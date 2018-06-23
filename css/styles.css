@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url("/assets/cashregister2"); */
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    margin-left: 450px;
+
+}
+
+#container {
+    /* margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+    align-content: center; */
+    /* background-image: url("/assets/kittens.jpg"); */
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif; 
+    /* background-image: url("/assets/cashregister2"); */
+}
+
+#screen {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: white;
+    font-size: 24px;
+}
+
+#clear, #balance, #deposit, #withdraw {
+    width: 75px;
+    padding: 10px;
+    text-align: center;
+}
+
+.numbers, .application, .other{
+    width: 75px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;    
+}
