@@ -126,6 +126,25 @@ img {
 }
 
 #receipt {
-    display: none;
+    display: block;
     position: absolute;
+    /* border: 1px solid black; */
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    left: 42.5%;
+    color: black;
+    text-align: center;
+}
+
+#total {
+    display: block;
+    position: absolute;
+    /* border: 1px solid black; */
+    height: 20px; 
+    width: 100px;
+    top: 25%;
+    left: 42.5%;
+    color: black;
+    /* z-index: -1; */
 }
