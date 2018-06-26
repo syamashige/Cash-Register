@@ -157,6 +157,7 @@
     }
 
 
+
     // var receiptElem = document.getElementById('receipt');
 
 

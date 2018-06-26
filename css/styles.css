@@ -20,30 +20,17 @@ h1 {
 
 }
 
-img {
-    width: 45%;
+
+#register {
+    width: 43.5%;
     margin-left: 30%;
     z-index: -1;
-
 }
-/* 
-#container {
-    margin: auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 25%;
-    height: 300px;
-    padding: 10px;
-    align-content: center;
-    background-image: url("/assets/kittens.jpg");
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif; 
-    /* background-image: url("/assets/cashregister2"); 
-} */
+
 
 #screen {
     font-family: 'Press Start 2P', cursive;
-    width: 170px;
+    width: 180px;
     height: 10px;
     padding: 10px;
     border: 1px solid #949494;
@@ -54,16 +41,16 @@ img {
     opacity: .50;
     font-size: 24px;
     position: absolute;
-    top: 24.5%;
-    left: 52.8%;
+    top: 25%;
+    left: 52%;
     transform: skewX(2deg);
     font-size: 24px;
 }
 
 #numberContainer {
     position: absolute;
-    top: 36%;
-    left: 38.5%;
+    top: 38%;
+    left: 39.5%;
     /* transform: skewY(-1deg); */
     /* transform: skewX(-4deg); */
     padding: 10px 10px 15px 10px;
@@ -128,11 +115,11 @@ img {
 #receipt {
     display: block;
     position: absolute;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 100px;
     height: 100px;
     top: 15%;
-    left: 42.5%;
+    left: 42.3%;
     color: black;
     text-align: center;
 }
@@ -140,11 +127,11 @@ img {
 #total {
     display: block;
     position: absolute;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     height: 20px; 
     width: 100px;
-    top: 25%;
-    left: 42.5%;
+    top: 23%;
+    left: 42.3%;
     color: black;
     /* z-index: -1; */
 }
