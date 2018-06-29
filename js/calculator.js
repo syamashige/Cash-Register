@@ -128,7 +128,7 @@
                 // console.log("add" + storeAddition);
                 // console.log("this" + storeNums);
                 // console.log("result" + result)
-                receiptElem.innerHTML += "Item " + " " + "$ " + result + " ";
+                // receiptElem.innerHTML += "Item " + " " + "$ " + result + " ";
                 console.log(total);
                 storeAddition = null;
                 
@@ -136,7 +136,7 @@
                 storeNums = parseFloat(displayScreen.innerHTML);
                 result = storeSubtraction - storeNums;
                 displayScreen.innerHTML = result;
-                receiptElem.innerHTML += "Item " + " " + " " + " $ " + result + " ";
+                // receiptElem.innerHTML += "Item " + " " + " " + " $ " + result + " ";
                 // console.log("sub" + storeSubtraction);
                 // console.log("minus" + storeNums);
                 // console.log("result" + result);
@@ -145,13 +145,13 @@
                 storeNums = parseFloat(displayScreen.innerHTML);
                 result = storeMultiplication * storeNums;
                 displayScreen.innerHTML = result;
-                receiptElem.innerHTML += "Item " + " " + "$ " + result + " ";
+                // receiptElem.innerHTML += "Item " + " " + "$ " + result + " ";
                 storeMultiplication = null;
             } else if (!!storeDivision) {
                 storeNums = parseFloat(displayScreen.innerHTML);
                 result = storeDivision / storeNums;
                 displayScreen.innerHTML = result;
-                receiptElem.innerHTML += "Item " + " " + "$ " + result + " ";
+                // receiptElem.innerHTML += "Item " + " " + "$ " + result + " ";
                 storeDivision = null;
             }
     }
